@@ -5,15 +5,18 @@ export default function Hero() {
         <span className="inline-block bg-blue-600/20 text-blue-400 px-5 py-2 rounded-full text-sm font-semibold mb-6">
           AI AUTOMATION AGENCY
         </span>
-        <h1 className="text-5xl md:text-7xl font-black leading-tight">
-          Automate Your Business.
-          <br />
-          <span className="text-blue-500">Grow Faster With AI.</span>
-        </h1>
-        <p className="mt-8 text-xl text-slate-300 max-w-3xl mx-auto">
-          AutoFlowAI builds intelligent automation systems that eliminate repetitive work,
-          allowing your team to focus on growth, customers and innovation.
-        </p>
+        <h1 className="text-5xl md:text-7xl font-black leading-tight tracking-tight">
+  Stop Wasting Time On
+  <br />
+  <span className="text-blue-500">
+    Repetitive Work.
+  </span>
+</h1>
+  <p className="mt-8 text-xl text-slate-300 max-w-3xl mx-auto leading-8">
+  We build AI agents and intelligent automation systems that save businesses
+  hours every week, reduce costs, and allow teams to focus on growth instead
+  of repetitive manual work.
+</p>
         <div className="mt-10 flex justify-center gap-5 flex-wrap">
           <button className="bg-blue-600 hover:bg-blue-700 transition px-8 py-4 rounded-full font-bold">
             Book a Free Call
@@ -22,6 +25,18 @@ export default function Hero() {
             Explore Solutions
           </button>
         </div>
+        <div className="mt-12 text-slate-400 text-sm">
+  Trusted technologies we build with
+</div>
+
+<div className="flex flex-wrap justify-center gap-6 mt-6 text-slate-300 font-semibold">
+  <span>OpenAI</span>
+  <span>n8n</span>
+  <span>Groq</span>
+  <span>Claude</span>
+  <span>Make</span>
+  <span>Zapier</span>
+</div>
       </div>
     </section>
   );
