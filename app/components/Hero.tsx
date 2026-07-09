@@ -8,7 +8,7 @@ export default function Hero() {
         <h1 className="text-5xl md:text-7xl font-black leading-tight">
           Automate Your Business.
           <br />
-          <span className="text-blue-500">Grow Without Limits.</span>
+          <span className="text-blue-500">Grow Faster With AI.</span>
         </h1>
         <p className="mt-8 text-xl text-slate-300 max-w-3xl mx-auto">
           AutoFlowAI builds intelligent automation systems that eliminate repetitive work,
