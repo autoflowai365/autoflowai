@@ -22,7 +22,7 @@ export default function Services() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, i) => (
-            <div key={i} className="group bg-slate-800/50 rounded-2xl p-8 border border-slate-700 hover:border-blue-500 hover:bg-slate-800 hover:-translate-y-3 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-500">
+            <div key={i} className="group bg-slate-800/50 rounded-2xl p-8 border border-slate-700 hover:border-blue-500 hover:bg-slate-800 hover:-translate-y-3 transition-all duration-500">
               <div className="text-4xl mb-5 transition-transform duration-300 group-hover:scale-125">{service.icon}</div>
               <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition">{service.title}</h3>
               <p className="text-slate-400 text-sm leading-relaxed">{service.desc}</p>

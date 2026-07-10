@@ -18,10 +18,10 @@ export default function Hero() {
   of repetitive manual work.
 </p>
         <div className="mt-10 flex justify-center gap-5 flex-wrap">
-          <button className="bg-blue-600 hover:bg-blue-700 transition px-8 py-4 rounded-full font-bold">
+          <button className="bg-blue-600 hover:bg-blue-500 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg shadow-blue-500/30 px-8 py-4 rounded-full font-bold">
             Book a Free Call
           </button>
-          <button className="border border-slate-600 hover:border-blue-500 px-8 py-4 rounded-full">
+          <button className="border border-slate-600 hover:border-blue-500 hover:bg-white/5 hover:scale-105 transition-all duration-300 px-8 py-4 rounded-full">
             Explore Solutions
           </button>
         </div>
