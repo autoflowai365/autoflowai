@@ -18,10 +18,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <TrustedLogos />
-      <CaseStudies />
       <Services />
       <HowItWorks />
       <Stats />
+      <CaseStudies />
       <ROI />
       <Testimonials />
       <FAQ />
