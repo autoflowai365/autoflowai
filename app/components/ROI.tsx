@@ -1,18 +1,16 @@
 "use client";
-import { useMemo, useState, useEffect, useRef } from "react";
+import { useMemo, useState, useEffect } from "react";
 
 function useCountUp(target: number, duration = 800) {
-  const [value, setValue] = useState(target);
-  const prev = useRef(target);
+  const [value, setValue] = useState(0);
   useEffect(() => {
-    const start = prev.current;
-    const diff = target - start;
-    const steps = 30;
-    let step = 0;
+    let start = 0;
+    const steps = 40;
+    const increment = target / steps;
     const timer = setInterval(() => {
-      step++;
-      setValue(Math.round(start + (diff * step) / steps));
-      if (step >= steps) { clearInterval(timer); prev.current = target; }
+      start += increment;
+      if (start >= target) { setValue(target); clearInterval(timer); }
+      else { setValue(Math.round(start)); }
     }, duration / steps);
     return () => clearInterval(timer);
   }, [target, duration]);
@@ -69,7 +67,7 @@ export default function ROI() {
               <ul className="space-y-2 text-white">
                 <li>✓ {fullTimeEquivalent > 0 ? fullTimeEquivalent : 1} Full-Time Employee{fullTimeEquivalent > 1 ? "s" : ""} Salary</li>
                 <li>✓ {hoursSaved.toLocaleString()} Hours Saved Every Year</li>
-                <li>✓ Pays for itself in Weeks</li>
+                <li>✓ ROI achieved within weeks</li>
               </ul>
             </div>
             <div className="bg-white/10 rounded-2xl p-6 mb-8">
@@ -82,7 +80,7 @@ export default function ROI() {
                 <span className="font-bold text-white">N{animatedWeekly.toLocaleString()}</span>
               </div>
             </div>
-            <button className="bg-white text-blue-700 font-bold rounded-full py-4 hover:scale-105 transition">
+            <button className="bg-slate-950 text-white hover:bg-slate-900 font-bold rounded-full py-4 transition duration-300 shadow-lg">
               See How We Can Save Your Business Millions
             </button>
           </div>
