@@ -16,7 +16,7 @@ import Reveal from "./components/Reveal";
 
 export default function Home() {
   return (
-    <main className="bg-slate-950 min-h-screen">
+    <main className="animated-gradient grid-overlay min-h-screen"><div className="fixed inset-0 overflow-hidden pointer-events-none -z-10"><div className="absolute w-[700px] h-[700px] bg-blue-600/20 rounded-full blur-[180px] top-[-250px] left-[-200px] animate-pulse"/><div className="absolute w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[160px] bottom-[-150px] right-[-100px] animate-pulse"/></div>
       <Navbar />
       <Reveal><Hero /></Reveal>
       <Reveal><TrustedLogos /></Reveal>

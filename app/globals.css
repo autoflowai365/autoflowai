@@ -56,3 +56,21 @@ html { scroll-behavior: smooth; }
 ::-webkit-scrollbar-thumb:hover{
   background:#3b82f6;
 }
+
+/* Animated Background */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-gradient {
+  background: linear-gradient(-45deg, #020617, #08152d, #0f172a, #172554, #1d4ed8);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+}
+
+.grid-overlay {
+  background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}

@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
 
 const testimonials = [
@@ -33,7 +34,14 @@ export default function Testimonials() {
         </div>
         <div className="grid lg:grid-cols-3 gap-8">
           {testimonials.map((item, index) => (
-            <div key={index} className="rounded-3xl border border-blue-900 bg-[#0C1628] p-8 hover:border-blue-500 hover:-translate-y-2 transition duration-300">
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1, duration: 0.5 }}
+              className="rounded-3xl border border-blue-900 bg-[#0C1628] p-8 hover:border-blue-500 hover:-translate-y-2 transition duration-300"
+            >
               <Quote className="w-10 h-10 text-blue-500 mb-6" />
               <div className="flex mb-5">
                 {[1,2,3,4,5].map((i) => (<Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />))}
@@ -44,26 +52,14 @@ export default function Testimonials() {
                 <p className="text-gray-500">{item.company}</p>
                 <div className="mt-4 inline-block bg-blue-500/10 text-blue-400 rounded-full px-4 py-2 text-sm">{item.result}</div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
         <div className="grid md:grid-cols-4 gap-8 mt-24">
-          <div className="text-center">
-            <h3 className="text-4xl font-bold text-blue-500">80+</h3>
-            <p className="text-gray-400 mt-2">Businesses Automated</p>
-          </div>
-          <div className="text-center">
-            <h3 className="text-4xl font-bold text-blue-500">5,000+</h3>
-            <p className="text-gray-400 mt-2">Hours Saved</p>
-          </div>
-          <div className="text-center">
-            <h3 className="text-4xl font-bold text-blue-500">98%</h3>
-            <p className="text-gray-400 mt-2">Client Satisfaction</p>
-          </div>
-          <div className="text-center">
-            <h3 className="text-4xl font-bold text-blue-500">4.9★</h3>
-            <p className="text-gray-400 mt-2">Average Rating</p>
-          </div>
+          <div className="text-center"><h3 className="text-4xl font-bold text-blue-500">80+</h3><p className="text-gray-400 mt-2">Businesses Automated</p></div>
+          <div className="text-center"><h3 className="text-4xl font-bold text-blue-500">5,000+</h3><p className="text-gray-400 mt-2">Hours Saved</p></div>
+          <div className="text-center"><h3 className="text-4xl font-bold text-blue-500">98%</h3><p className="text-gray-400 mt-2">Client Satisfaction</p></div>
+          <div className="text-center"><h3 className="text-4xl font-bold text-blue-500">4.9★</h3><p className="text-gray-400 mt-2">Average Rating</p></div>
         </div>
       </div>
     </section>

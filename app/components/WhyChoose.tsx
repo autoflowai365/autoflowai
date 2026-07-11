@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import { Rocket, Bot, ShieldCheck, TrendingUp, Puzzle, Headset } from "lucide-react";
 
 const features = [
@@ -21,13 +22,20 @@ export default function WhyChoose() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="group rounded-3xl border border-slate-800 bg-slate-900/60 p-8 transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-[0_0_40px_rgba(37,99,235,0.25)]">
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1, duration: 0.5 }}
+              className="group rounded-3xl border border-slate-800 bg-slate-900/60 p-8 transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-[0_0_40px_rgba(37,99,235,0.25)]"
+            >
               <div className="w-16 h-16 rounded-2xl bg-blue-600/20 flex items-center justify-center text-blue-400 mb-6 transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110">
                 {feature.icon}
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">{feature.title}</h3>
               <p className="text-slate-400 leading-8">{feature.desc}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

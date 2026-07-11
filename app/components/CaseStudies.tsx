@@ -40,7 +40,15 @@ export default function CaseStudies() {
         </div>
         <div className="grid lg:grid-cols-3 gap-8">
           {studies.map((study, i) => (
-            <motion.div key={i} whileHover={{ y: -10, scale: 1.02 }} transition={{ duration: 0.25 }} className="group rounded-3xl border border-blue-900/40 bg-[#0B1120] p-8 shadow-xl hover:border-blue-500 hover:shadow-[0_0_40px_rgba(37,99,235,.25)] transition-all duration-300">
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1, duration: 0.5 }}
+              whileHover={{ y: -10, scale: 1.02 }}
+              className="group rounded-3xl border border-blue-900/40 bg-[#0B1120] p-8 shadow-xl hover:border-blue-500 hover:shadow-[0_0_40px_rgba(37,99,235,.25)] transition-all duration-300"
+            >
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center text-white transition-transform duration-300 group-hover:rotate-6">{icons[i]}</div>
                 <div>
