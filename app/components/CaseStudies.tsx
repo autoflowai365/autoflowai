@@ -30,7 +30,7 @@ export default function CaseStudies() {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {caseStudies.map((study, index) => (
-            <div key={index} className="rounded-3xl border border-slate-700 bg-slate-950 p-8 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300">
+            <div key={index} className="rounded-3xl border border-slate-700 bg-slate-950 p-8 transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-[0_0_35px_rgba(37,99,235,0.25)]">
               <div className="inline-block bg-blue-600/20 text-blue-400 px-4 py-2 rounded-full text-sm font-semibold mb-6">{study.industry}</div>
               <div className="mb-6">
                 <h3 className="text-red-400 font-bold mb-4">Before</h3>
@@ -48,7 +48,7 @@ export default function CaseStudies() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-8 rounded-xl bg-blue-600/10 border border-blue-500/30 p-4 text-center">
+              <div className="mt-8 rounded-xl bg-blue-950 border border-blue-700 py-4 text-center font-semibold text-blue-300 animate-pulse">
                 <p className="text-blue-400 font-bold">📈 {study.result}</p>
               </div>
             </div>
