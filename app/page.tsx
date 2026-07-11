@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import TrustedLogos from "./components/TrustedLogos";
 import Services from "./components/Services";
 import HowItWorks from "./components/HowItWorks";
 import Stats from "./components/Stats";
@@ -13,6 +14,7 @@ export default function Home() {
     <main className="bg-slate-950 min-h-screen">
       <Navbar />
       <Hero />
+      <TrustedLogos />
       <Services />
       <HowItWorks />
       <Stats />
