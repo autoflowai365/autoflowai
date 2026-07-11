@@ -7,19 +7,19 @@ const studies = [
     industry: "Salon & Spa",
     before: ["Missed WhatsApp bookings","Double bookings","Manual appointment reminders"],
     after: ["AI books appointments 24/7","Automatic reminders","Instant confirmations"],
-    stats: [{ label: "35% More Bookings" },{ label: "8+ Hours Saved Weekly" }],
+    stats: [{ icon: "↗", value: "+35%", label: "More Bookings" },{ icon: "⏱", value: "8+", label: "Hours Saved Weekly" }],
   },
   {
     industry: "Real Estate",
     before: ["Slow lead response","Spreadsheet management","Lost enquiries"],
     after: ["AI qualifies every lead","CRM updated automatically","Instant WhatsApp follow-up"],
-    stats: [{ label: "300+ Leads Automated" },{ label: "30 Second Response" }],
+    stats: [{ icon: "↗", value: "300+", label: "Leads Automated" },{ icon: "⏱", value: "30s", label: "Response Time" }],
   },
   {
     industry: "E-commerce",
     before: ["Manual customer support","Repeated questions","Order update delays"],
     after: ["24/7 AI customer support","Automatic order updates","Instant FAQ replies"],
-    stats: [{ label: "70% Fewer Support Tickets" },{ label: "Higher Customer Satisfaction" }],
+    stats: [{ icon: "$", value: "70%", label: "Fewer Support Tickets" },{ icon: "↗", value: "High", label: "Customer Satisfaction" }],
   },
 ];
 
@@ -27,12 +27,6 @@ const icons = [
   <Scissors className="w-6 h-6" />,
   <Building2 className="w-6 h-6" />,
   <ShoppingCart className="w-6 h-6" />,
-];
-
-const statIcons = [
-  [<TrendingUp size={18} />, <Clock size={18} />],
-  [<TrendingUp size={18} />, <Clock size={18} />],
-  [<DollarSign size={18} />, <TrendingUp size={18} />],
 ];
 
 export default function CaseStudies() {
@@ -46,9 +40,9 @@ export default function CaseStudies() {
         </div>
         <div className="grid lg:grid-cols-3 gap-8">
           {studies.map((study, i) => (
-            <motion.div key={i} whileHover={{ y: -8, scale: 1.02 }} transition={{ duration: 0.25 }} className="rounded-3xl border border-blue-900/40 bg-[#0B1120] p-8 shadow-xl">
+            <motion.div key={i} whileHover={{ y: -10, scale: 1.02 }} transition={{ duration: 0.25 }} className="group rounded-3xl border border-blue-900/40 bg-[#0B1120] p-8 shadow-xl hover:border-blue-500 hover:shadow-[0_0_40px_rgba(37,99,235,.25)] transition-all duration-300">
               <div className="flex items-center gap-3 mb-8">
-                <div className="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center text-white">{icons[i]}</div>
+                <div className="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center text-white transition-transform duration-300 group-hover:rotate-6">{icons[i]}</div>
                 <div>
                   <p className="text-white font-bold text-xl">{study.industry}</p>
                   <p className="text-blue-400 text-sm">AI Automation Case Study</p>
@@ -63,11 +57,11 @@ export default function CaseStudies() {
               <ul className="space-y-3 mb-8">
                 {study.after.map((item) => (<li key={item} className="text-white flex gap-2">✅ {item}</li>))}
               </ul>
-              <div className="space-y-3">
-                {study.stats.map((stat, j) => (
-                  <div key={stat.label} className="rounded-xl bg-blue-600/10 border border-blue-500/20 p-4 flex items-center gap-3 text-blue-300 font-semibold">
-                    {statIcons[i][j]}
-                    {stat.label}
+              <div className="grid grid-cols-2 gap-3">
+                {study.stats.map((stat) => (
+                  <div key={stat.label} className="rounded-xl bg-blue-600/10 border border-blue-500/20 p-4 text-center group-hover:bg-blue-600/20 group-hover:border-blue-400/40 transition-all duration-300">
+                    <div className="text-blue-300 text-xl font-black mb-1">{stat.icon} {stat.value}</div>
+                    <div className="text-blue-400 text-xs font-semibold">{stat.label}</div>
                   </div>
                 ))}
               </div>
