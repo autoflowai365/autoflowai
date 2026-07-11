@@ -12,23 +12,24 @@ import FAQ from "./components/FAQ";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
+import Reveal from "./components/Reveal";
 
 export default function Home() {
   return (
     <main className="bg-slate-950 min-h-screen">
       <Navbar />
-      <Hero />
-      <TrustedLogos />
-      <Services />
-      <HowItWorks />
-      <Stats />
-      <CaseStudies />
-      <WhyChoose />
-      <ROI />
-      <Testimonials />
-      <FAQ />
-      <CTA />
-      <Footer />
+      <Reveal><Hero /></Reveal>
+      <Reveal><TrustedLogos /></Reveal>
+      <Reveal><Services /></Reveal>
+      <Reveal><HowItWorks /></Reveal>
+      <Reveal><Stats /></Reveal>
+      <Reveal><CaseStudies /></Reveal>
+      <Reveal><WhyChoose /></Reveal>
+      <Reveal><ROI /></Reveal>
+      <Reveal><Testimonials /></Reveal>
+      <Reveal><FAQ /></Reveal>
+      <Reveal><CTA /></Reveal>
+      <Reveal><Footer /></Reveal>
       <WhatsAppButton />
     </main>
   );
