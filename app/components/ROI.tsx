@@ -33,7 +33,7 @@ export default function ROI() {
   const animatedWeekly = useCountUp(weeklySavings);
 
   return (
-    <section className="py-28 bg-slate-950 px-6">
+    <section className="py-28 bg-slate-950 px-6 relative overflow-hidden"><div className="absolute inset-0 bg-blue-500/5 blur-[120px] pointer-events-none" />
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <span className="px-5 py-2 rounded-full bg-blue-600/20 text-blue-400 font-semibold">ROI CALCULATOR</span>
@@ -58,7 +58,7 @@ export default function ROI() {
               <div className="text-blue-400 mt-2 font-bold">N{hourlyRate.toLocaleString()}/hour</div>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-blue-700 to-cyan-500 rounded-3xl p-10 flex flex-col justify-center shadow-[0_0_60px_rgba(37,99,235,0.35)]">
+          <div className="bg-gradient-to-br from-blue-700 to-cyan-500 rounded-3xl p-10 flex flex-col justify-center shadow-[0_0_60px_rgba(37,99,235,0.35)] hover:scale-[1.02] transition-all duration-300">
             <div className="text-white/80 uppercase tracking-widest mb-4">Estimated Savings</div>
             <div className="text-6xl font-black text-white mb-2">N{animatedYearly.toLocaleString()}</div>
             <div className="text-white text-xl mb-6">Per Year</div>

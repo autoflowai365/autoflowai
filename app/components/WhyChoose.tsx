@@ -13,7 +13,7 @@ const features = [
 
 export default function WhyChoose() {
   return (
-    <section className="py-28 bg-slate-950">
+    <section className="py-28 bg-slate-950 relative overflow-hidden"><div className="absolute inset-0 bg-blue-500/5 blur-[120px] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <span className="inline-block bg-blue-600/20 text-blue-400 px-5 py-2 rounded-full text-sm font-semibold">WHY CHOOSE AUTOFLOW AI</span>
