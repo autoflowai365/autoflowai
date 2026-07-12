@@ -9,6 +9,7 @@ import WhyChoose from "./components/WhyChoose";
 import ROI from "./components/ROI";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
+import WhatsNext from "./components/WhatsNext";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -16,7 +17,7 @@ import Reveal from "./components/Reveal";
 
 export default function Home() {
   return (
-    <main className="animated-gradient grid-overlay min-h-screen"><div className="fixed inset-0 overflow-hidden pointer-events-none -z-10"><div className="absolute w-[700px] h-[700px] bg-blue-600/20 rounded-full blur-[180px] top-[-250px] left-[-200px] animate-pulse"/><div className="absolute w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[160px] bottom-[-150px] right-[-100px] animate-pulse"/></div>
+    <main className="bg-slate-950 min-h-screen">
       <Navbar />
       <Reveal><Hero /></Reveal>
       <Reveal><TrustedLogos /></Reveal>
@@ -28,6 +29,7 @@ export default function Home() {
       <Reveal><ROI /></Reveal>
       <Reveal><Testimonials /></Reveal>
       <Reveal><FAQ /></Reveal>
+      <Reveal><WhatsNext /></Reveal>
       <Reveal><CTA /></Reveal>
       <Reveal><Footer /></Reveal>
       <WhatsAppButton />
