@@ -74,3 +74,29 @@ html { scroll-behavior: smooth; }
   background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
   background-size: 60px 60px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #2563eb;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050816;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
