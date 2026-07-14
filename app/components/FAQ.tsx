@@ -29,22 +29,22 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="py-28 bg-[#07111F]">
-      <div className="max-w-5xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <span className="uppercase tracking-widest text-blue-400 text-sm">Frequently Asked Questions</span>
-          <h2 className="text-5xl font-bold mt-4 mb-6">Everything You Need To Know</h2>
-          <p className="text-gray-400">Answers to the questions we hear most from business owners.</p>
+    <section className="py-16 md:py-28 bg-[#07111F]">
+      <div className="max-w-5xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-10 md:mb-16">
+          <span className="uppercase tracking-widest text-blue-400 text-xs md:text-sm">Frequently Asked Questions</span>
+          <h2 className="text-3xl md:text-5xl font-bold mt-3 md:mt-4 mb-4 md:mb-6">Everything You Need To Know</h2>
+          <p className="text-gray-400 text-sm md:text-base">Answers to the questions we hear most from business owners.</p>
         </div>
-        <div className="space-y-5">
+        <div className="space-y-3 md:space-y-5">
           {faqs.map((faq, index) => (
             <div key={index} className="rounded-2xl border border-blue-900 bg-[#0C1628] overflow-hidden">
-              <button onClick={() => setOpen(open === index ? null : index)} className="w-full flex justify-between items-center p-6 text-left">
-                <span className="font-semibold text-lg">{faq.question}</span>
-                <ChevronDown className={`transition-transform duration-300 ${open === index ? "rotate-180" : ""}`} />
+              <button onClick={() => setOpen(open === index ? null : index)} className="w-full flex justify-between items-center p-4 md:p-6 text-left gap-4">
+                <span className="font-semibold text-sm md:text-lg">{faq.question}</span>
+                <ChevronDown className={`transition-transform duration-300 flex-shrink-0 w-4 h-4 md:w-5 md:h-5 ${open === index ? "rotate-180" : ""}`} />
               </button>
               <div className={`transition-all duration-300 overflow-hidden ${open === index ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}`}>
-                <p className="px-6 pb-6 text-gray-400 leading-8">{faq.answer}</p>
+                <p className="px-4 md:px-6 pb-4 md:pb-6 text-gray-400 leading-7 md:leading-8 text-sm md:text-base">{faq.answer}</p>
               </div>
             </div>
           ))}
