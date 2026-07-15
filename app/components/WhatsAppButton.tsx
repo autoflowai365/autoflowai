@@ -2,7 +2,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsAppButton() {
-  const phone = "2348031234567";
+  const phone = "2348120068497";
   const msg = "Hi%20AutoFlow%20AI,%20I%20am%20interested%20in%20automation.";
   const url = "https://wa.me/" + phone + "?text=" + msg;
   return (

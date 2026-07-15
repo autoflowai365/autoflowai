@@ -16,11 +16,13 @@ export const metadata: Metadata = {
     siteName: "AutoFlow AI",
     locale: "en_US",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "AutoFlow AI" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "AutoFlow AI",
     description: "AI Automation Agency helping businesses automate operations.",
+    images: ["/og-image.png"],
   },
 };
 
