@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="bg-slate-950 text-white pt-28 pb-16 px-4 md:pt-40 md:pb-28 md:px-6">
@@ -7,8 +9,8 @@ export default function Hero() {
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-black leading-tight mb-4">Automate Your Business.<br /><span className="text-blue-500">Grow Without Limits.</span></h1>
           <p className="mt-4 md:mt-8 text-base md:text-xl text-slate-300 max-w-3xl">AutoFlowAI builds intelligent automation systems that eliminate repetitive work, allowing your team to focus on growth, customers and innovation.</p>
           <div className="mt-6 md:mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-3 md:gap-5">
-            <button className="bg-blue-600 hover:bg-blue-500 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg shadow-blue-500/30 px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-sm md:text-base">Book a Free Call</button>
-            <button className="border border-slate-600 hover:border-blue-500 hover:bg-white/5 hover:scale-105 transition-all duration-300 px-6 md:px-8 py-3 md:py-4 rounded-full text-sm md:text-base">Explore Solutions</button>
+            <Link href="/#contact" className="bg-blue-600 hover:bg-blue-500 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg shadow-blue-500/30 px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-sm md:text-base text-white text-center">Book a Free Call</Link>
+            <Link href="/services" className="border border-slate-600 hover:border-blue-500 hover:bg-white/5 hover:scale-105 transition-all duration-300 px-6 md:px-8 py-3 md:py-4 rounded-full text-sm md:text-base text-white text-center">Explore Solutions</Link>
           </div>
         </div>
         <div className="flex flex-col gap-4 mt-8 lg:mt-0">

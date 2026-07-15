@@ -46,7 +46,7 @@ export default function ServicesPage() {
         </h1>
         <p className="text-slate-400 text-base md:text-xl max-w-2xl mx-auto mb-8 md:mb-10">We design intelligent AI systems that eliminate repetitive work, automate customer communication, streamline operations, and help businesses grow faster.</p>
         <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-          <a href="mailto:autoflowai365@gmail.com" className="bg-blue-600 hover:bg-blue-500 hover:scale-105 px-6 md:px-8 py-3 md:py-4 rounded-full font-bold transition-all duration-300 text-sm md:text-base">Book Strategy Call</a>
+          <a href="/#contact" className="bg-blue-600 hover:bg-blue-500 hover:scale-105 px-6 md:px-8 py-3 md:py-4 rounded-full font-bold transition-all duration-300 text-sm md:text-base">Book Strategy Call</a>
           <a href="/case-studies" className="border border-slate-600 hover:border-blue-500 hover:bg-white/5 px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 text-sm md:text-base">See Case Studies</a>
         </div>
       </section>
@@ -128,7 +128,7 @@ export default function ServicesPage() {
             <h2 className="text-3xl md:text-5xl font-black text-white mb-4 md:mb-6">Let Us Build Your First Automation</h2>
             <p className="text-blue-100 text-sm md:text-lg mb-8 md:mb-10 max-w-2xl mx-auto">Book a free strategy session and discover how much time and money your business could save with intelligent automation.</p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-              <a href="mailto:autoflowai365@gmail.com" className="bg-white text-blue-700 font-bold px-8 md:px-10 py-3 md:py-4 rounded-full text-sm md:text-lg hover:bg-blue-50 hover:scale-105 transition-all duration-300">Book Free Strategy Call</a>
+              <a href="/#contact" className="bg-white text-blue-700 font-bold px-8 md:px-10 py-3 md:py-4 rounded-full text-sm md:text-lg hover:bg-blue-50 hover:scale-105 transition-all duration-300">Book Free Strategy Call</a>
               <a href="/#contact" className="border-2 border-white/50 text-white font-bold px-8 md:px-10 py-3 md:py-4 rounded-full text-sm md:text-lg hover:border-white hover:bg-white/10 transition-all duration-300">Calculate Your Savings</a>
             </div>
           </div>
@@ -140,3 +140,4 @@ export default function ServicesPage() {
     </main>
   );
 }
+
