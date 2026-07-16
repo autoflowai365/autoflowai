@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   keywords: ["AI Automation","Business Automation","Workflow Automation","WhatsApp Automation","CRM Automation","OpenAI","n8n","AI Agents","Nigeria AI Agency"],
   authors: [{ name: "AutoFlow AI" }],
   creator: "AutoFlow AI",
+  verification: {
+    google: "itz5sa_pMa-LIeG2Gs4_eppps2ILCVlKlP2fSiJDWpI",
+  },
   openGraph: {
     title: "AutoFlow AI",
     description: "Automate your business. Save hundreds of hours every month.",
