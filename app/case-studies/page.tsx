@@ -36,7 +36,7 @@ const stats = [
 
 const trustLogos = ["WhatsApp","OpenAI","Google Calendar","Stripe","Notion","Slack","Gmail"];
 
-export default function CaseStudiesPage() {
+export const metadata = { title: "Case Studies | AutoFlow AI", description: "See how AI automation saves businesses thousands of hours. Real results from real clients across multiple industries.", };`n`nexport default function CaseStudiesPage() {
   return (
     <main className="bg-slate-950 min-h-screen text-white">
       <Navbar />

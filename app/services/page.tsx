@@ -31,7 +31,7 @@ const faqs = [
   { q: "How much does it cost?", a: "Every project is different. We will recommend the most cost-effective solution during your strategy call." },
 ];
 
-export default function ServicesPage() {
+export const metadata = { title: "AI Automation Services | AutoFlow AI", description: "Explore our AI automation services including AI agents, workflow automation, WhatsApp automation, CRM integration and more.", };`n`nexport default function ServicesPage() {
   return (
     <main className="bg-slate-950 min-h-screen text-white">
       <Navbar />
