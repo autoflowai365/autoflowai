@@ -23,7 +23,7 @@ export default function Footer() {
             <ul className="space-y-2 text-slate-400 text-sm">
               <li><a href="#how-it-works" className="hover:text-blue-400 transition">How It Works</a></li>
               <li><a href="#contact" className="hover:text-blue-400 transition">Contact Us</a></li>
-              <li><a href="mailto:hello@autoflowai.com" className="hover:text-blue-400 transition">hello@autoflowai.com</a></li>
+              <li><a href="mailto:autoflowai365@gmail.com" className="hover:text-blue-400 transition">autoflowai365@gmail.com</a></li>
             </ul>
           </div>
         </div>
