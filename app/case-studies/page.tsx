@@ -46,7 +46,7 @@ export const metadata = { title: "Case Studies | AutoFlow AI", description: "See
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-4 md:mb-6">Real Automation.<br /><span className="text-blue-500">Real Business Results.</span></h1>
         <p className="text-slate-400 text-base md:text-xl max-w-2xl mx-auto mb-8 md:mb-10">Explore how intelligent automation transforms everyday business operations, saves thousands of hours, reduces costs, and creates better customer experiences.</p>
         <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-10 md:mb-16">
-          <a href="mailto:autoflowai365@gmail.com" className="bg-blue-600 hover:bg-blue-500 hover:scale-105 px-6 md:px-8 py-3 md:py-4 rounded-full font-bold transition-all duration-300 text-sm md:text-base">Book Strategy Call</a>
+          <a href="https://calendly.com/autoflowai365/free-strategy-call" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-500 hover:scale-105 px-6 md:px-8 py-3 md:py-4 rounded-full font-bold transition-all duration-300 text-sm md:text-base">Book Strategy Call</a>
           <a href="/services" className="border border-slate-600 hover:border-blue-500 hover:bg-white/5 px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-300 text-sm md:text-base">View Services</a>
         </div>
         <div className="border-t border-slate-800 pt-8 md:pt-10">
@@ -211,7 +211,7 @@ export const metadata = { title: "Case Studies | AutoFlow AI", description: "See
               <div className="text-blue-100 text-xs md:text-sm">✓ Personalized automation roadmap</div>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-              <a href="mailto:autoflowai365@gmail.com" className="bg-white text-blue-700 font-bold px-8 md:px-12 py-4 md:py-5 rounded-full text-sm md:text-lg hover:bg-blue-50 hover:scale-105 transition-all duration-300">Book My Free Strategy Call</a>
+              <a href="https://calendly.com/autoflowai365/free-strategy-call" target="_blank" rel="noopener noreferrer" className="bg-white text-blue-700 font-bold px-8 md:px-12 py-4 md:py-5 rounded-full text-sm md:text-lg hover:bg-blue-50 hover:scale-105 transition-all duration-300">Book My Free Strategy Call</a>
               <a href="/#contact" className="border-2 border-white/50 text-white font-bold px-8 md:px-12 py-4 md:py-5 rounded-full text-sm md:text-lg hover:border-white hover:bg-white/10 transition-all duration-300">Calculate My Savings</a>
             </div>
           </div>
