@@ -73,7 +73,7 @@ const plans = [
   },
 ];
 
-const FeaturedProjects = [
+const realProjects = [
   {
     icon: "👕",
     industry: "Laundry Business",
