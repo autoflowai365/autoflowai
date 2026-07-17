@@ -34,7 +34,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-6 py-3 md:py-4">
         <Link href="/" className="text-xl md:text-3xl font-black text-blue-500 transition-all duration-300 hover:scale-105">AutoFlow AI</Link>
         <nav className="hidden md:flex gap-8 text-slate-200">
-          <Link href="/services" className="text-gray-300 transition-all duration-300 hover:text-blue-400 text-sm">Services</Link>
+          <Link href="/services" className="text-gray-300 transition-all duration-300 hover:text-blue-400 text-sm">Services</Link><Link href="/pricing" className="text-gray-300 transition-all duration-300 hover:text-blue-400 text-sm">Pricing</Link>
           <Link href="/#how-it-works" className="text-gray-300 transition-all duration-300 hover:text-blue-400 text-sm">How It Works</Link>
           <Link href="/#contact" className="text-gray-300 transition-all duration-300 hover:text-blue-400 text-sm">Contact</Link>
         </nav>
