@@ -35,7 +35,7 @@ export default function Navbar() {
         <Link href="/" className="text-xl md:text-3xl font-black text-blue-500 transition-all duration-300 hover:scale-105">AutoFlow AI</Link>
         <nav className="hidden md:flex gap-8 text-slate-200">
           <Link href="/services" className="text-gray-300 transition-all duration-300 hover:text-blue-400 text-sm">Services</Link>
-          <Link href="/pricing" className="text-gray-300 transition-all duration-300 hover:text-blue-400 text-sm">Pricing</Link>
+          <Link href="/pricing" className="text-gray-300 transition-all duration-300 hover:text-blue-400 text-sm">Pricing</Link><Link href="/demo" className="text-blue-400 transition-all duration-300 hover:text-blue-300 text-sm font-semibold border border-blue-500/30 px-3 py-1 rounded-full">Live Demo</Link><Link href="/demo" className="text-blue-400 transition-all duration-300 hover:text-blue-300 text-sm font-semibold border border-blue-500/30 px-3 py-1 rounded-full">Live Demo</Link>
           <Link href="/#how-it-works" className="text-gray-300 transition-all duration-300 hover:text-blue-400 text-sm">How It Works</Link>
           <Link href="/#contact" className="text-gray-300 transition-all duration-300 hover:text-blue-400 text-sm">Contact</Link>
         </nav>
