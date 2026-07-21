@@ -52,7 +52,7 @@ export default function DemoPage() {
   }, [activeDemo]);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (bottomRef.current) { bottomRef.current.scrollIntoView({ behavior: "smooth", block: "nearest" }); }
   }, [messages]);
 
   async function sendMessage(text?: string) {
