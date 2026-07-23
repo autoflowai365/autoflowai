@@ -1,3 +1,5 @@
+export const metadata = { title: "Case Studies | AutoFlow AI", description: "See how AI automation saves businesses thousands of hours." };
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
@@ -36,7 +38,7 @@ const stats = [
 
 const trustLogos = ["WhatsApp","OpenAI","Google Calendar","Stripe","Notion","Slack","Gmail"];
 
-export const metadata = { title: "Case Studies | AutoFlow AI", description: "See how AI automation saves businesses thousands of hours. Real results from real clients across multiple industries.", };`n`nexport default function CaseStudiesPage() {
+export default function CaseStudiesPage() {
   return (
     <main className="bg-slate-950 min-h-screen text-white">
       <Navbar />
@@ -223,3 +225,7 @@ export const metadata = { title: "Case Studies | AutoFlow AI", description: "See
     </main>
   );
 }
+
+
+
+
